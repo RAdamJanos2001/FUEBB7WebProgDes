@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.szoveg{
+  font-size: 40px;
+  font-weight: bold;
+}
+.bord {
+  border: 1px solid darkslategrey;
+  border-radius: 4px; 
+  background: black;
+  width: 70%;
+  bottom: 0;
+  opacity: 0.9;
+}
+.cim {
+  font-size: 25px;
+  font-weight: bold;
+}
+.ikon{
+  font-size: 25px;
+}
+.gomb{
+  font-weight: bold;
+  font-size: 20px;
+}.gomb1{
+  font-weight: bold;
+  font-size: 25px;
+  width: 80px;
+}
+.kozep{
+  text-align: center;
+  padding-left: 25%;
+}
+.st{
+  font-size: 75px;
+}
+table, tbody, tr, td{
+  font-size: 20px;
+}
+th{
+  font-size: 25px;
+}
+.active{
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeinup {
+  opacity: 0; /* Kezdetben láthatatlan */
+  transform: translateY(20px); /* Kezdetben lentebb van */
+}
+
+
+.fadeinup-visible {
+  animation: fadeInUp 2s ease-out 1s forwards; /* 3s duration, 2s delay */
+}
+
+select.form-select option:checked {
+  color: black; 
+  font-weight: bold; 
+  font-size: 30px;
+}
+
+.navbar.bg-dark-scroll {
+  background-color: #343a40 !important; /* Sötét háttérszín */
+  transition: background-color 0.3s ease-in-out;
+}
+
